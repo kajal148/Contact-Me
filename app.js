@@ -27,7 +27,9 @@ const db = admin.firestore();
 app.get('/',(req,res)=>{
     res.redirect('/contact')
 })
-
+app.get('/notsent',(req,res)=>{
+    res.render('not sent')
+})
 app.get('/contact',(req,res)=>{
     res.render('form.ejs')
 })
